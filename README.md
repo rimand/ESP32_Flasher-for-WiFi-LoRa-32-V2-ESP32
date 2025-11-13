@@ -1,5 +1,7 @@
 # ESP32 Flasher Tool for WiFi LoRa 32(V2), ESP32 + SX1262 LoRa Node,
 
+https://heltec.org/project/wifi-lora-32v2/
+
 โปรแกรม Python สำหรับ burn/flash ไฟล์ binary ลง ESP32 board ผ่าน GUI ที่ใช้งานง่าย
 
 ## ฟีเจอร์
