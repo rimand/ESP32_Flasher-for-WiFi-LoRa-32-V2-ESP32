@@ -23,7 +23,7 @@ REM Build with PyInstaller
 pyinstaller --onefile ^
     --windowed ^
     --name "ESP32_Flasher" ^
-    --icon=NONE ^
+    --icon=icon.ico ^
     --add-data "requirements.txt;." ^
     --hidden-import=serial.tools.list_ports ^
     --hidden-import=tkinter ^

@@ -20,6 +20,9 @@ class ESP32Flasher:
         else:
             self.current_dir = os.path.dirname(os.path.abspath(__file__))
         
+        # Set window icon
+        self.set_window_icon()
+        
         # Config file path
         self.config_file = os.path.join(self.current_dir, "config.json")
         
@@ -42,6 +45,22 @@ class ESP32Flasher:
         
         # Update UI with loaded config
         self.update_ui_from_config()
+    
+    def set_window_icon(self):
+        """Set the window icon"""
+        try:
+            icon_path = os.path.join(self.current_dir, "icon.ico")
+            if os.path.exists(icon_path):
+                self.root.iconbitmap(icon_path)
+            else:
+                # Try to find icon in the same directory as the script
+                script_dir = os.path.dirname(os.path.abspath(__file__)) if not getattr(sys, 'frozen', False) else self.current_dir
+                icon_path = os.path.join(script_dir, "icon.ico")
+                if os.path.exists(icon_path):
+                    self.root.iconbitmap(icon_path)
+        except Exception as e:
+            # If icon can't be set, just continue without it
+            print(f"Could not set icon: {e}")
         
     def setup_ui(self):
         # Configure root grid

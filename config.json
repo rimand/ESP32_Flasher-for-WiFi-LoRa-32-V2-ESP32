@@ -1,5 +1,5 @@
 {
-    "port": "COM7",
+    "port": "COM5",
     "esptool_path": "C:\\Users\\ROG-ZEPHYRUS-i9-04\\Documents\\Arduino\\hardware\\heltec\\esp32\\tools\\esptool\\esptool.exe",
     "bootloader_path": "C:/Users/ROG-ZEPHYRUS-i9-04/Desktop/Thermite v4/Binary/Master/LoRaController.ino.bootloader.bin",
     "partitions_path": "C:/Users/ROG-ZEPHYRUS-i9-04/Desktop/Thermite v4/Binary/Master/LoRaController.ino.partitions.bin",
